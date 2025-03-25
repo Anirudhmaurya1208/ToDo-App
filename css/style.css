@@ -1,0 +1,719 @@
+/* fonts */
+@font-face {
+    font-family: AbrilFatface-Regular;
+    src: url(../fonts/AbrilFatface-Regular.ttf);
+} 
+*{
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5{
+    font-family: AbrilFatface-Regular;
+}
+
+/* if you want to fix the header in website do the following thing */
+/* header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+section{
+    margin-top: 170px;
+} */
+/* if you want to fix the header in website do the above thing */
+
+/* body  */
+body{
+    margin: 0;
+    background-size: cover;
+}
+#index-body,#signin-body,#signup-body{
+    background-image: url('../images/bg-img.png') ;
+    background-repeat: no-repeat;
+}
+
+
+
+.uni-padding{
+    padding: 0 7%;
+}
+
+
+/* logo-bar styling start... */
+#logo-img{
+    width: 5%;
+}
+#logo-bar{
+    background-color: rgb(224, 219, 219);
+    /* background-color: rgb(133, 117, 117); */
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#social-icon{
+    display: inline-block;
+}
+/* #img-todo{
+    display: inline-block;
+} */
+#todo-str{
+    /* position: relative; */
+    /* right: 37%; */
+    color: rgb(63, 13, 70);
+}
+.fa-brands{
+    background-color: black;
+    color: rgb(224, 219, 219);
+    padding: 7px;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+.fa-brands:hover{
+    background-color: white;
+    color: black;
+}
+.fa-facebook-f{
+    padding: 7px 10px;
+}
+.fa-whatsapp{
+    padding: 7px 8px;
+}
+.fa-instagram{
+    padding: 7px 8px;
+}
+/* logo-bar styling end. */
+
+/* menu-bar styling start... */
+.current-page{
+    background-color: red;
+    padding: 3px 18px; 
+    border-radius: 50px;
+}
+#menu-bar{
+    background-color: rgb(31, 29, 63);
+}
+#menu-bar ul{
+    margin: 0px;
+    margin-left: -35px;
+}
+#menu-bar ul li{
+    display: inline-block;
+    padding: 22px 0;
+    padding-right: 60px;
+}
+#menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    transition: all 0.3s ease 0s;
+}  
+#menu-bar ul li a:hover{
+    color: rgb(31, 29, 63);
+    background-color: white;
+    padding: 3px 18px;
+    border-radius: 50px; 
+}
+/* menu-bar styling end. */
+
+
+/* home content styling start...  */
+#container-box{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#index-text{
+    /* max-width: 600px; */
+    width: 100%;
+    height: 55vh;
+}
+#index-text h1{
+    color: white;
+    font-size: 45px;
+}
+#index-text p{
+    color: rgb(158, 161, 163);
+    font-size: 22px;
+    font-weight: 3px; 
+}
+#content-box{
+    /* border-radius: 10px;
+    box-shadow: 4px 4px 7px 7px rgb(53, 46, 46); */
+    /* max-width: 600px; */
+    width: 100%; 
+    /* margin: auto; */
+    height: 50vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+    text-align: right;
+    /* background-color: wheat; */
+}
+#content-box a{
+    background-color: white;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease 0s;
+}
+#content-box a:hover{
+    background-color: black;
+    color: white;
+}
+#content-box p{
+    font-size: 23px;
+    color: yellow;
+}
+/* home content styling end. */
+
+/* sign-in content styling start... */
+#content-box-signin{
+    border-radius: 10px;
+    box-shadow: 4px 4px 7px 7px rgb(53, 46, 46);
+    max-width: 700px;
+    width: 100%; 
+    height: 55vh;
+    background-color: wheat;
+    text-align: center;
+}
+#content-box-signin h1{
+    font-size: 30px;
+    color: #242f3b;
+}
+.input{
+    width: 73%;
+    padding: 10px;
+    margin: 10px 0; 
+    border-radius: 20px;
+    border: 1px solid #999;
+}
+.input:focus{
+    box-shadow: 3px 3px 5px 5px whitesmoke;
+    /* padding: 10px; */
+}
+#signin-submit{
+    padding: 30px;
+}
+#signin-submit input{
+    padding: 10px 20px;
+    transition: all 0.3s ease 0s;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #222f3e;
+}
+#signin-submit input:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+#content-box-signin form a{
+    text-decoration: none;
+    color: darkgreen;
+    font-size: 22px;
+    transition: all 0.3s ease 0s;
+}
+#content-box-signin form a:hover{
+    text-decoration: underline;
+}
+/* sign-in content styling end. */
+
+
+/* sign-up content styling start... */
+#content-box-signup{
+    border-radius: 10px;
+    box-shadow: 4px 4px 7px 7px rgb(53, 46, 46);
+    max-width: 700px;
+    width: 100%; 
+    height: 60vh;
+    background-color: wheat;
+    text-align: center;
+}
+#content-box-signup h1{
+    font-size: 30px;
+    color: #242f3b;
+}
+.label{
+    font-size: 17px;
+    color: #222f3e;
+}
+#signup-submit{
+    padding: 30px;
+}
+#signup-submit input{
+    padding: 10px 20px;
+    transition: all 0.3s ease 0s;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #222f3e;
+}
+#signup-submit input:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+/* sign-up content styling end. */
+
+/* contact content styling start... */
+#contact-container-box{
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#content-box-contact{
+    border-radius: 5px;
+    box-shadow: 4px 4px 7px 7px rgb(122, 108, 108); 
+    max-width: 1300px;
+    width: 100%; 
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 75px;
+    padding-left: 7px;
+    padding-right: 7px;
+    background-color: whitesmoke;
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-around;
+    /* overflow: auto; */
+}
+#content-box-contact-div1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 60px;
+}
+#content-box-contact-div1 h1{
+    font-size: 33px;
+}
+#content-box-contact-div1 h2{
+    font-size: 27px;
+}
+#content-box-contact-div1 p{
+    font-size: 16px;
+    color: rgb(71, 71, 71);
+}
+
+#content-box-contact-div2{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: center;
+    padding-top: 60px;
+}
+#contact-form div{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+#contact-form div input{
+    width: 490px;
+    background-color: rgb(198, 204, 204);
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+}
+#contact-form div textarea{
+    background-color: rgb(198, 204, 204);
+    border-radius: 5px;
+    resize: none;
+    border: none;
+    width: 500px;
+}
+#contact-form div #contact-submit{
+    background-color: rgb(192, 144, 192);
+    padding: 10px;
+    cursor: pointer;
+    width: 500px;
+}
+#contact-form div #contact-submit:hover{
+    background-color: rgb(148, 83, 148);
+}
+
+/* contact content styling end. */
+
+
+
+
+/* footer styling start...  */
+#contact{
+background-color: red;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+#contact-us{
+    color: white;
+    font-size: 18px;
+}
+#contact-us a{
+    text-decoration: none;
+    color: rgb(194, 168, 122)
+}
+#contact-us a:hover{
+    color: blueviolet;
+}
+#contact-us::first-line{
+    font-size: 30px;
+    font-weight: 900;
+}
+#contact-btn{
+    background-color: rgb(58, 6, 6);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: 600;
+    transition: all 0.3s ease 0s;
+} 
+#contact-btn:hover{
+    color: rgba(58, 6, 6,1);
+    background-color: white;
+    font-weight: 600;
+}
+#copyright{
+    background-color: #222f3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+#copyright p{
+    color: white;
+    font-size: 18px;
+}   
+/* footer styling end. */
+
+
+/* making responsive start.... */
+
+/* responsive home page for computers ipads and ipad-pros */
+@media screen and (min-width:429px){
+    #container-box-home{
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* 1) making responsive for the ipad-pro */
+@media screen and (max-width:1024px){
+
+    .uni-padding{
+        padding: 0 5%;
+    }
+    
+    /* #todo-str{
+        right: 30%;
+    } */
+    #container-box-home{
+        height: 65vh ;
+    }
+    #container-box{
+        height: 70vh;
+    }
+
+    /* home page  */
+    #index-text{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    #index-text h1{
+        font-size: 35px;
+    }
+    #index-text p{
+        font-size: 20px;
+    }
+    #content-box{
+        width: 40%;
+        height: auto;
+        width: 100%;
+    }
+    #content-box p{
+        /* margin: 0px;
+        padding: 20px; */
+        text-align: center;
+        font-size: 23px;
+    }
+    /* sign in  */
+    #content-box-signin{
+        height: auto;
+        padding-top: 8% ;
+        padding-bottom: 10% ;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    /* sign up */
+    #content-box-signup{
+        height: auto;
+        padding-top: 8% ;
+        padding-bottom: 10% ;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    /* contact page  */
+    #content-box-contact-div1{
+        width: 50%;
+    }
+    #content-box-contact-div2{
+        width: 50%;
+    }
+    #contact-form div input{
+        width: auto;
+    }
+    #contact-form div textarea{
+        width: auto;
+    }
+    #contact-form div #contact-submit{
+        width: auto;
+    }
+
+    #contact-container-box{
+        height: 75vh;
+    }
+    #content-box-contact{
+        height: auto;    
+        padding-top: 50px;
+        padding-bottom: 90px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+/* making responsive for ipad  */
+@media screen and (max-width: 768px){
+    /* #todo-str {
+        right: 27%;
+    } */
+    /* menu bar */
+    #menu-bar ul li{
+        padding-right: 25px;
+    }
+    #menu-bar ul li a{
+        font-size: 21px;
+    }  
+    #menu-bar ul li a:hover{
+        padding: 3px 18px;
+    }
+
+    /* home page */
+    #index-text{
+        width: 100%;
+    }
+    #index-text h1{
+        font-size: 27px;
+    }
+    #index-text p{
+        font-size: 16px;
+    }
+    #content-box{
+        width: 100%;
+    }
+    #content-box p{
+        font-size: 18px;
+    }
+
+    #content-box-signup{
+        height: auto;
+        padding-top: 8% ;
+        padding-bottom: 10% ;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    #content-box-signup{
+        width: 100%;
+        height: auto;
+    }
+    .input{
+        width: 65%;
+    }
+
+    #contact-container-box{
+        height: 90vh;
+    }
+}
+
+/* making responsive for the mobile */
+@media screen and (max-width : 450px){
+    /* logobar  */
+    
+    
+    #todo-str{
+        /* right: 0%;  */
+        font-size: 23px;
+    }
+    #logo-img{
+        width: 12%;
+    }
+
+    /* home */
+    #container-box-home{
+        height: auto;
+    }
+    
+    #index-text {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    #index-text h1{
+        font-size: 31px;
+        text-align: center;
+    }
+    #index-text p{
+        text-align: center;
+        font-size: 20px;
+    }
+    #content-box{
+        width: 100%;
+        padding-bottom: 60px;
+        align-items: left;
+    }
+    #content-box p{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* footer responsive  */
+    #contact{
+        display: block;
+        height: 148px;
+        text-align: center;
+    }
+    #copyright{
+        text-align:center
+    }
+
+    /* sign in  */
+    #container-box{
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    /* .label{
+        text-align: left;
+    }
+     */
+     #content-box-signin h1{
+         font-size: 27px;
+         text-decoration: underline;
+     }
+     #content-box-signin form a{
+         font-size: 19px;
+     }
+     #content-box-signup h1{
+        font-size: 27px;
+        text-decoration: underline;
+    }
+    .input{
+        width: 90%;
+    }
+    
+    #content-box-signup form div{
+        text-align: left;
+        padding-left: 10px;
+    }
+    #signup-submit{
+        text-align: center !important;
+        padding-left: 23px !important;
+    }
+
+    /* contact responsive start  */
+    #contact-container-box{
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #content-box-contact{
+        display: block;
+    }
+    #content-box-contact-div1{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    #content-box-contact-div1 h1{
+        font-size: 31px;
+    }
+    #content-box-contact-div1 h2{
+        font-size: 23px;
+        font-weight: 600;
+    }
+    #content-box-contact-div1 p{
+        text-align: left;
+    }
+    #content-box-contact-div2{
+        width: 100%;
+        align-items: left;
+        text-align: center;
+        padding-top: 35px;
+    }
+
+    #contact-form div input{
+        width: 94%;
+    }
+    #contact-form div textarea{
+        width: 252px; 
+    }
+}
+
+
+/* making responsive navigation bar */
+#menu-bar ul #mobile-cross, #mobile-bar{
+    display: none;
+}
+
+@media screen and (max-width : 450px){
+    
+    #menu-bar {
+        position: absolute;
+        top: 0px;
+        height: 100vh;
+        width: 280px;
+        padding: 0px;
+        left: -280px;
+        transition: all 0.5s ease;
+    }
+    #menu-bar ul li {
+        display: block;
+        padding: 22px 0;
+        padding-right: 35px;
+        border-bottom: 1px solid white;
+        padding-left: 20px;
+    }
+    #mobile-cross{
+        text-align: right;
+    }
+    .fa-circle-xmark{
+        font-size: 27px;
+    }
+    #mobile-bar{
+        background-color: rgb(31, 29, 63);
+        color: white;
+        padding: 18px;
+        font-size: 28px;
+    }
+    #menu-bar ul #mobile-cross, #mobile-bar{
+        display: block;
+    }   
+    
+}
+
+
+
+

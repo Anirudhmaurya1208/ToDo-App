@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <!-- fontawesome for social media icons  -->
+    <script src="https://kit.fontawesome.com/86f1eeca22.js" crossorigin="anonymous"></script>
+
+    <!-- style  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="signup-body">
+    <div id="container">
+        <!-- header -->
+        <header>
+            <!-- logo-bar -->
+            <div id="logo-bar" class="uni-padding">
+                <img src="images/todo-logo.png" alt="logo" id="logo-img">
+                <h1 id="todo-str">TO-DO</h1> 
+                <div id="social-icon"> 
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://wa.me/+918425998839"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a> 
+                    <a href="https://www.instagram.com/coding_altu/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <!-- menu-bar or nav-bar-->
+            <nav id="menu-bar" class="uni-padding">
+                <ul>
+                    <!-- mobile btn  -->
+                    <li id="mobile-cross"><a href="javascript:void(0)" onclick="closeMenu()"><i class="fa-solid fa-circle-xmark"></i></a></li>
+                    <!-- mobile-btn upar -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sign_in.html">Sign-in</a></li>
+                    <li><a class="current-page" href="sign_up.html">Sign-up</a></li>
+                    <li><a href="todo_list.html">Todo-list</a></li>
+                    <li><a href="contact_us.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- mobile menu btn -->
+            <div id="mobile-bar" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i> Menu
+            </div>
+        </header>
+
+        <!-- content -->
+        <section id="container-box" class="uni-padding">
+            <div id="content-box-signup" class="uni-padding">
+                <h1>Sign Up</h1>
+                <form action="">
+                    <div id="signup-name">
+                        <label class="label" for="name">Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </label>
+                        <input class="input" type="text" id="Name" placeholder="Enter your Name" required>
+                    </div>
+                    <div id="signup-email">
+                        <label class="label" for="email">Username &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </label>
+                        <input class="input" type="email" id="email" placeholder="Enter your email here" required>
+                    </div>
+                    <div id="signup-password">
+                        <label class="label" for="password">Password &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </label>
+                        <input class="input" type="password" id="password" placeholder="Enter Password here" required>
+                    </div> 
+                    <div id="signup-password">
+                        <label class="label" for="password">Confirm Password : </label>
+                        <input class="input" type="password" id="password" placeholder="Enter Password again" required>
+                    </div> 
+                    <div id="signup-submit">
+                        <input type="submit" value="Create account">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- footer  -->
+        <footer >
+            <div id="contact" class="uni-padding">
+                <p id="contact-us">Contact Us Here <br> for more information mail Us <a href="mailto:shaikhaltamash_ce_2020@ltce.in"> Here  </a>  <br> Toll free : 12345-06789</p>
+                <a href="contact_us.html" id="contact-btn">Contact Us</a>
+            </div>
+            <div id="copyright" class="uni-padding">
+                <p>Copyright &copy; Altamash Ankan Anirudh 2022</p>
+            </div>
+        </footer>
+
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
